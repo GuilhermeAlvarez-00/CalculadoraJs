@@ -49,16 +49,16 @@ button:hover{
 }
 
 .button-operator:hover{
-    background-color: #44a8b8;
+    background-color: #d31c4d;
 }
 
 button:focus{
     outline: 0;
-    border: 1px solid #52C9DC;
+    border: 1px solid #F31E58;
 }
 
 .button-operator{
-    background-color: #52C9DC;
+    background-color: #F31E58;
 }
 
 .result{
