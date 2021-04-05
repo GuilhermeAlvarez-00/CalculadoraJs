@@ -5,16 +5,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*   */
-
 body{
+    height: 100%;
+    background-color: #2E303B;
+}
+
+.container{
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2E303B;
-    padding: 20px;
+    flex-direction: column;
+    padding: 80px 20px;
 }
 
 .calculator{
@@ -79,4 +82,27 @@ button:focus{
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background-color: #1A1B28;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    font-weight: 700;
+}
+
+footer p a{
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    text-decoration: underline;
 }

@@ -7,50 +7,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <script src="script.js"></script>
     <link href="styles.css" rel="stylesheet" />
     <title>Calculadora</title>
 </head>
 <body>
 
-    <div class="calculator">
-        <div class="result">
-            <div class="result-text">
-                <p id="result"></p>
+    <div class="container">
+        <div class="calculator">
+            <div class="result">
+                <div class="result-text">
+                    <p id="result"></p>
+                </div>
+            </div>
+    
+            <div class="line-button">
+                <button class="button-operator" value="C" onclick="calculator.reset()">C</button>
+                <button class="button-operator" onclick="calculator.delete()"><i class="fas fa-backspace"></i></button>
+            </div>
+            <div class="line-button">
+                <button value="7" onclick="calculator.button(this)">7</button>
+                <button value="8" onclick="calculator.button(this)">8</button>
+                <button value="9" onclick="calculator.button(this)">9</button>
+                <button class="button-operator" value="/" onclick="calculator.button(this)"><i class="fas fa-divide"></i></button>
+            </div>
+    
+            <div class="line-button">
+                <button value="4" onclick="calculator.button(this)">4</button>
+                <button value="5" onclick="calculator.button(this)">5</button>
+                <button value="6" onclick="calculator.button(this)">6</button>
+                <button class="button-operator" value="*" onclick="calculator.button(this)"><i class="fas fa-times"></i></button>
+            </div>
+    
+            <div class="line-button">
+                <button value="1" onclick="calculator.button(this)">1</button>
+                <button value="2" onclick="calculator.button(this)">2</button>
+                <button value="3" onclick="calculator.button(this)">3</button>
+                <button class="button-operator" value="-" onclick="calculator.button(this)"><i class="fas fa-minus"></i></button>
+            </div>
+    
+            <div class="line-button">
+                <button value="0" onclick="calculator.button(this)">0</button>
+                <button value="." onclick="calculator.button(this)">.</button>
+                <button class="button-operator" value="=" onclick="calculator.calculate(this)"><i class="fas fa-equals"></i></button>
+                <button class="button-operator" value="+" onclick="calculator.button(this)"><i class="fas fa-plus"></i></button>
             </div>
         </div>
-
-        <div class="line-button">
-            <button class="button-operator" value="C" onclick="calculator.reset()">C</button>
-            <button class="button-operator" onclick="calculator.delete()"><i class="fas fa-backspace"></i></button>
-        </div>
-        <div class="line-button">
-            <button value="7" onclick="calculator.button(this)">7</button>
-            <button value="8" onclick="calculator.button(this)">8</button>
-            <button value="9" onclick="calculator.button(this)">9</button>
-            <button class="button-operator" value="/" onclick="calculator.button(this)"><i class="fas fa-divide"></i></button>
-        </div>
-
-        <div class="line-button">
-            <button value="4" onclick="calculator.button(this)">4</button>
-            <button value="5" onclick="calculator.button(this)">5</button>
-            <button value="6" onclick="calculator.button(this)">6</button>
-            <button class="button-operator" value="*" onclick="calculator.button(this)"><i class="fas fa-times"></i></button>
-        </div>
-
-        <div class="line-button">
-            <button value="1" onclick="calculator.button(this)">1</button>
-            <button value="2" onclick="calculator.button(this)">2</button>
-            <button value="3" onclick="calculator.button(this)">3</button>
-            <button class="button-operator" value="-" onclick="calculator.button(this)"><i class="fas fa-minus"></i></button>
-        </div>
-
-        <div class="line-button">
-            <button value="0" onclick="calculator.button(this)">0</button>
-            <button value="." onclick="calculator.button(this)">.</button>
-            <button class="button-operator" value="=" onclick="calculator.calculate(this)"><i class="fas fa-equals"></i></button>
-            <button class="button-operator" value="+" onclick="calculator.button(this)"><i class="fas fa-plus"></i></button>
-        </div>
     </div>
+
+    <footer>
+        <p>Desenvoldido por <a target="_blank" href="https://github.com/GuilhermeAlvarez-00">Guilherme Alvarez Barboza</a></p>
+    </footer> 
+
+    <script src="script.js"></script>
 </body>
 </html>
