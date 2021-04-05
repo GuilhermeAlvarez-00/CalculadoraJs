@@ -94,11 +94,11 @@ footer{
 }
 
 footer p{
-    font-weight: 700;
+    font-weight: normal;
 }
 
 footer p a{
-    font-weight: normal;
+    font-weight: 700;
     color: white;
     text-decoration: none;
 }
